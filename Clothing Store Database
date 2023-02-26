@@ -1,0 +1,43 @@
+-Create a database for a clothing store.
+
+CREATE TABLE store (id integer primary key, name text, price integer, size text, material text, consumer text);
+
+-Inserting into the database the values for individual items.
+
+INSERT INTO store VALUES
+(1, 'tshirt', '$15', 'small', 'cotton', 'mens');
+INSERT INTO store VALUES
+(2, 'tshirt', '$15', 'medium', 'cotton', 'mens');
+INSERT INTO store VALUES
+(3, 'tshirt', '$15', 'large', 'cotton', 'mens');
+INSERT INTO store VALUES
+(4, 'tshirt', '$15', 'small', 'cotton', 'womens');
+INSERT INTO store VALUES
+(5, 'tshirt', '$15', 'medium', 'cotton', 'womens');
+INSERT INTO store VALUES
+(6, 'tshirt', '$15', 'large', 'cotton', 'womens');
+INSERT INTO store VALUES
+(7, 'tshirt', '$15', 'small', 'cotton', 'kids');
+INSERT INTO store VALUES
+(8, 'tshirt', '$15', 'medium', 'cotton', 'kids');
+INSERT INTO store VALUES
+(9, 'tshirt', '$15', 'large', 'cotton', 'kids');
+INSERT INTO store VALUES
+(10, 'gloves', '$20', 'small', 'leather', 'mens'
+);
+INSERT INTO store VALUES
+(11, 'gloves', '$20', 'medium', 'leather', 'mens');
+INSERT INTO store VALUES
+(12, 'gloves', '$20', 'large', 'leather', 'mens');
+INSERT INTO store VALUES
+(13, 'hat', '$25', 'osfa', 'canvas', 'mens');
+INSERT INTO store VALUES
+(14, 'hat', '$25', 'osfa', 'canvas', 'womens');
+INSERT INTO store VALUES
+(15, 'hat', '$25', 'osfa', 'canvas', 'kids');
+SELECT * FROM store;
+
+-Placing items in order from highest to lowest price.
+
+SELECT * FROM store
+ORDER BY price desc;
